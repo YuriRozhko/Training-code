@@ -85,3 +85,13 @@ echo "Lesser!"
 five=$(($five+1)) # $((mathematical operation)) syntax is how we can do math stuff
 echo "$five"
 done
+
+# Input and Output
+# We can ask for inputer from the user that is using the shell scripting and output some sort of response
+echo "What is your name?"
+read name # Read [wahtever variable name you specify] will store the user input in that variable
+
+echo "Hello $name, Welcome to programming!"
+
+# Making a shell menu
+
