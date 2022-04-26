@@ -9,4 +9,4 @@
 3. Selected product can be checkout
 	* a new option will appear if the user select a product
 	* checkout (it will just exit the program)
-
+Bonus: User can keep selecting products and total price will be given at the checkout option
