@@ -56,7 +56,7 @@ fi
 
 # For Loops statment
 # Will repeat x amount of times
-# Useful if you nkow how many times you need to execute those lines of code
+# Useful if you know how many times you need to execute those lines of code
 
 echo "===For Loops==="
 echo "===First Loop==="
@@ -89,9 +89,34 @@ done
 # Input and Output
 # We can ask for inputer from the user that is using the shell scripting and output some sort of response
 echo "What is your name?"
-read name # Read [wahtever variable name you specify] will store the user input in that variable
+#read name # Read [wahtever variable name you specify] will store the user input in that variable
 
 echo "Hello $name, Welcome to programming!"
 
 # Making a shell menu
+clear # clear command will clear all the text in the terminal
+repeat="true"
 
+while [ "$repeat" == "true" ]
+do
+echo "Welcome to shell scripting!"
+echo "What do you want to do today?"
+echo "enter 1 for adding two numbers?"
+echo "enter 2 to exit"
+
+read answer
+if [ "$answer" == "1" ]
+then
+	echo "Give me number 1"
+	read num1
+	echo "Give me number 2"
+	read num2
+	echo "The sum is $(($num1+$num2))"
+elif [ "$answer" == "2" ]
+then
+	repeat="false"
+else
+	echo "Please enter a correct option"
+fi
+
+done
