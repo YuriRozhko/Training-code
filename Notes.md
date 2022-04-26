@@ -13,6 +13,9 @@
 * It will look at what the user inputs on the CLI and interpret it to do the operations
 * To be able to understand what the user is trying to ask it to do, it has pre-made keywords that the user can do
 * Want to change directory? Well the user needs to type "cd" on the CLI to undersand that you want to change directory. Anything else you type it may not understand it and shell will also let you know that it didn't understand it
+### Bash
+* It is Unix shell that provides the user extra commands that doesn't exist in other shell such as command prompt
+* Essentially command prompt was made for Window OS while Git bash was made for Unix/Linux based OS
 
 ## Shell Commands
 * Help - shows all the potential commands you can use in the terminal 
@@ -33,3 +36,5 @@
     * Think of the search bar in your file explorer that finds certain filenames
 * Nano - Allows us to edit files
     * Think of notepad
+* Read - Will ask the user for some input and store it inside of a variable
+

@@ -18,8 +18,9 @@ five=5
 thirteen=13
 
 echo "===First If==="
-if [ "$five" -ge "$ten" ]
+if [ "$five" -ge "$ten" ] # -ge stands for greater than symbol or >
 then
+# Anything inside the then and fi is what is affected by the if statement
 echo "Greater!"
 echo "$ten > $five"
 fi
@@ -27,12 +28,11 @@ fi
 echo "This is outside of the then fi"
 
 echo "===Second If==="
-
-if [ "$five" -ge "$ten" ]
+if [ "$five" -ge "$ten" ] 
 then
 echo "Greater!"
 echo "$five > $ten"
-elif [ "$five" -le "$ten" ]
+elif [ "$five" -le "$ten" ] # elif will check its condition only if the previous if has failed
 then
 echo "Lesser!"
 echo "$five < $ten"
@@ -47,12 +47,12 @@ elif [ "$five" -ge "$thirteen" ]
 then
 echo "Greater!"
 echo "$five > $thirteen"
-else
+else # else will run only if all previous conditions have failed
 echo "Nothing Matches"
 fi
 
 # Loops Statement
-# A way to repeat multiple lines of code x amount of times you want
+# A way to repeat multiple lines of code
 
 # For Loops statment
 # Will repeat x amount of times
